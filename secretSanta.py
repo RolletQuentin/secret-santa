@@ -51,6 +51,7 @@ def draw(mailing_list, max_iteration=50):
         already_receiver_list = []
         already_sender_list = []
         while (j < len(mailing_list) and not (impossible)):
+            print(j)
             try:
                 sender = draw_sender(mailing_list, already_sender_list)
                 receiver = draw_receiver(
